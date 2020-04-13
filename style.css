@@ -33,7 +33,6 @@
     height:  calc(100vh - 100px);
 }
 
-
 .fontbold {
     font-weight: bold;
 }
@@ -139,10 +138,6 @@ main .leftfixed .logo-leftfixed img {
     justify-content: space-between;
 }
 
-
-
-
-
 .footer-left {
     height: 100px;
     width: 300px;
@@ -166,10 +161,6 @@ main .leftfixed .logo-leftfixed img {
     width: 100%;
     object-fit: cover;
 }
-
-
-
-
 
 .footer-center {
     height: 100px;
@@ -247,40 +238,57 @@ main .leftfixed .logo-leftfixed img {
     background-color: rgb(155, 152, 135);
 }
 
-
-
-
-
-
-
-
-
 .footer-right {
     height: 100px;
     width: 300px;
     background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.footer-right div:first-child ,  .footer-right div:nth-child(2) {
+    padding-right: 20px;
+}
 
+ .footer-right div:nth-child(3) {
+    padding-right: 5px;
+}
+ .footer-right div:last-child {
+    margin-right: 10px;
+}
 
+.volume-bar {
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+.volume-bar::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 16px) / 2);
+    height: 3px;
+    background-color:rgb(155, 152, 135);
+}
 
+.volume-bar::before{
+    left: 0;
+}
+.volume-bar::after{
+    right: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.volume-bar::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width:  calc((100% - 16px) / 2);
+    height: 3px;
+    background-color: rgb(155, 152, 135);
+}
 
 ::-webkit-scrollbar {
     display: none; /* Chrome Safari */
