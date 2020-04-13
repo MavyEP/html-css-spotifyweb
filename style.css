@@ -28,7 +28,7 @@
 }
 
 .main-container {
-    width: 1200px;
+    width: 80%;
     margin: auto;
     height:  calc(100vh - 100px);
 }
@@ -144,7 +144,6 @@ main .leftfixed .logo-leftfixed img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: red;
 }
 
 .footer-left span  {
@@ -165,7 +164,6 @@ main .leftfixed .logo-leftfixed img {
 .footer-center {
     height: 100px;
     width: 800px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +183,7 @@ main .leftfixed .logo-leftfixed img {
     font-size: 20px;
 }
 .footer-center .song-actions div:nth-child(3) i{
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .footer-center .playing-now-bar {
@@ -241,7 +239,6 @@ main .leftfixed .logo-leftfixed img {
 .footer-right {
     height: 100px;
     width: 300px;
-    background-color: green;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -289,6 +286,61 @@ main .leftfixed .logo-leftfixed img {
     height: 3px;
     background-color: rgb(155, 152, 135);
 }
+
+@media screen and (max-width:850px) {
+    .leftfixed span {
+        display:  none;
+    }
+    .leftfixed p {
+        display:  none;
+    }
+    .leftfixed {
+        width:100px;
+    }
+    .main-content {
+        margin-left: 100px;
+    }
+    .leftfixed i {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1439px) {
+    footer .footer .footer-right {
+        display: none;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width:1079px) {
+
+    main .main-content .header {
+        display: none;
+    }
+
+    footer .footer .footer-left .favoutire {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:980px) {
+
+    footer .footer .footer-left  {
+        display: none;
+    }
+}
+
+
+
+
+
+
 
 ::-webkit-scrollbar {
     display: none; /* Chrome Safari */
