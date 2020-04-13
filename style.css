@@ -175,12 +175,77 @@ main .leftfixed .logo-leftfixed img {
     height: 100px;
     width: 800px;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
 }
 
+.footer-center .song-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-right: 250px;
+}
 
+.footer-center .song-actions i {
+    font-size: 20px;
+}
+.footer-center .song-actions div:nth-child(3) i{
+    font-size: 45px;
+}
 
+.footer-center .playing-now-bar {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer-center .playing-now-bar .bar{
+    position: relative;
+}
 
+.footer-center .playing-now-bar span {
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.bar {
+    width: 600px;
+    text-align: center;
+}
+
+.bar i {
+    z-index: 999999;
+}
+
+.bar::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 16px) / 2);
+    height: 3px;
+    background-color:rgb(155, 152, 135);
+}
+
+.bar::before{
+    left: 0;
+}
+.bar::after{
+    right: 0;
+}
+
+.bar::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width:  calc((100% - 16px) / 2);
+    height: 3px;
+    background-color: rgb(155, 152, 135);
+}
 
 
 
